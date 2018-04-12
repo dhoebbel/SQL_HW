@@ -49,9 +49,6 @@ WHERE last_name=’WILLIAMS’
 SELECT first_name, last_name, address from staff
 JOIN address ON staff.staff_id = address.staff_id 
 #6b
-SELECT first_name, last_name, SUM(price)
-JOIN payment ON staff.staff_id = payment.staff_id (or whatever the id connecting them is)
-WHERE month=’August’ AND year=2005
 #6c
 SELECT film, count(actor_id) FROM film
 INNER JOIN film_actor.film_id = film.film_id
